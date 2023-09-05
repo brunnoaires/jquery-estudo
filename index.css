@@ -1,0 +1,20 @@
+.todosTipo{
+    display: flex;
+            flex-direction: column; /* Os elementos serão empilhados verticalmente */
+        }
+
+.todasClasses{
+    display: flex;
+    flex-direction: column; /* Os elementos serão empilhados verticalmente */
+    margin-top: 10px;
+        }
+
+        .meu-botao{
+            width: 100px;
+    height: 20px;
+    background-color: #3498db; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+            
+        }

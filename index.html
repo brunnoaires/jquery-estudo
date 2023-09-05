@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+<body>
+    
+    <div class="todosTipo">
+        por tipo
+    <h1>Seletores do jQuery para elementos HTML</h1>
+    <button class="meu-botao">Botão 1</button>
+    <button class="meu-botao">Botão 2</button>
+    <button class="meu-botao">Botão 3</button>
+
+    <script>
+        $(document).ready(function() {
+            // Selecionar todos os botões
+            $("button").css("background-color", "blue");
+        });
+    </script>
+</div>
+
+<div class="todasClasses">
+ por classe
+<button class="meu-botao">Botão 1</button>
+<button class="meu-botao">Botão 2</button>
+<button class="meu-botao">Botão 3</button>
+
+<script>
+    $(document).ready(function() {
+        // Selecionar todos os botões com a classe 'meu-botao'
+        $(".meu-botao").click("background-color", "green");
+    });
+</script>
+</div>
+
+
+<div>
+
+
+
+</div>
+    
+</body>
+</html>
