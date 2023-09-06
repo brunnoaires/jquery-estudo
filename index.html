@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="index.css">
-
+    <script src="js/jquery.js">
+        </script>
 </head>
 <body>
     
     <div class="todosTipo">
-        por tipo
     <h1>Seletores do jQuery para elementos HTML</h1>
+
+    por tipo
     <button class="meu-botao">Botão 1</button>
     <button class="meu-botao">Botão 2</button>
     <button class="meu-botao">Botão 3</button>
@@ -19,7 +21,7 @@
     <script>
         $(document).ready(function() {
             // Selecionar todos os botões
-            $("button").css("background-color", "blue");
+      //      $("button").click("background-color", "blue");
         });
     </script>
 </div>
@@ -31,19 +33,46 @@
 <button class="meu-botao">Botão 3</button>
 
 <script>
-    $(document).ready(function() {
+   $(document).ready(function() {
         // Selecionar todos os botões com a classe 'meu-botao'
-        $(".meu-botao").click("background-color", "green");
-    });
+        $(".meu-botao").click(function(){
+        $(this).addClass("mudar-cor");
+    
+        setTimeout(function() {
+                    $(".botao").removeClass("mudar-cor");
+                }, 1000); // 1000 milissegundos (1 segundo)
+            });
+        });
 </script>
 </div>
 
-
 <div>
+<!--Inserção e remoção de elementos JQUERY-->
+<!--Usamos o append() para inserir um conteudo na extremidade do elemento-->
 
+<button id="btnAdd">Clica ai Append, vou adicionar algo no final :D</button>
+<button id="btnAddIni">Clica ai Prepend, vou adicionar algo no inicio :D</button>
+<script>
+$(document).ready(function(){
+$("#btnAdd").click(function(){
+    $("p").append(" Brunno")
+});
+});
+</script>
 
+<script>
+    $(document).ready(function(){
+        $("#btnAddIni").click(function(){
+            $("p").prepend("Lais ")
+        });
+    });
+</script>
+
+<p>Nao sei oq</p>
+<p>Nao sei oq la</p>
 
 </div>
-    
+</div>
+</div>    
 </body>
 </html>
